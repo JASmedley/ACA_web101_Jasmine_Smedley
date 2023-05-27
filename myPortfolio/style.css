@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+html, body {
+  font-family: Open Sans;
+  font-size: 18px;
+  line-height: 28px;
+  scroll-behavior: smooth;
+  margin: auto;
+
+}
+
+header {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  width: 100%;
+}
+
+.logo {
+  width: 20%;
+  height: 70%;
+  margin: 3% 10%; 
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+  width: 100%;
+  padding-right: 2%;
+}
+
+nav > a {
+  margin: 2% 2%;
+  height: 25%;
+  width: 15%;
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.has-border {
+  border-radius: 25px;
+  border: 2px solid black;
+  background: rgb(255, 208, 137);
+  padding: 10px ; 
+}
+
+.MainContainer {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 700px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.ParallaxContainer {
+  position: relative;
+  z-index: -1;
+  height: 600px;
+  margin-top: -100px;
+  justify-content: center;
+  align-items: center;
+  transform: translateZ(-1px) scale(2);
+  background: url(https://www.toptal.com/designers/subtlepatterns/patterns/sakura.png);
+  background: linear-gradient(60deg, rgba(249,178,51,100) 0%, rgba(254, 220, 169, 100) 100%);
+  ;
+}
+
+#profile-pic {
+  width: 70%;
+  margin: -35% auto;
+  margin-left: 40%;
+}
+
+h1 {
+  font-family:  Arial, Helvetica, sans-serif;
+  padding-top: 5%;
+  padding-left: 4%;
+  color: black;
+  text-align: left;
+  font-size: 500%;
+  font-weight: 800;
+  line-height: 200px;
+}
+
+h2 {
+  font-family:  'Lato', sans-serif;
+  margin-top: -5%;
+  padding-left: 20%;
+  color: black;
+  text-align: left;
+  font-size: 150%;
+}
+
+button {
+  grid-column: 2/3;
+  height: 10%;
+  width: 12%;
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin: 50px;
+  margin-left: 25%;
+  border-radius: 25px;
+  background: white;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height: 50px;
+  margin-bottom: -15px; /*Fix for safari gap*/
+  min-height: 70px;
+  max-height:150px;
+}
+
+.content {
+  position:relative;
+  height: 700px;
+  text-align:center;
+  background-color: white;
+}
+
+/* Animation */
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/* End Animation */
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+}
+/*End waves*/
+
+.ContentContainer {
+  position: relative;
+  display: block;
+  background-color: white;
+  z-index: 1;
+}
+
+.Content2 {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 75px 0;
+}
+
+p {
+  margin: 75px 0;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  font-size:14px;
+  color: #333333;
+}
+
+footer {
+text-align: center;
+}
+
