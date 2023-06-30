@@ -98,8 +98,8 @@ outline: none;
 }
 
 #profile-pic {
-  width: 60%;
-  top: 5px;
+  width: 55%;
+  top: 40px;
   left: 40%;
   margin: auto;
   position: absolute;
@@ -247,13 +247,143 @@ p {
   color: #333333;
 }
 
-@media only screen and (max-width: 1349px) {
+@media only screen and (max-width: 1350px) {
   h1 {
     font-size: 4em;
   }
   #profile-pic {
     top: unset;
-    bottom: -45px;
+    bottom: -100px;
     
+  }
+} 
+
+@media only screen and (max-width: 1250px) {
+  #profile-pic {
+    top: unset;
+    bottom: -65px;
+    width: 55%;
+  }
+} 
+
+@media only screen and (max-width: 1200px) {
+  #profile-pic {
+    top: unset;
+    bottom: -65px;
+    width: 60%;
+  }
+} 
+
+@media only screen and (max-width: 1150px) {
+  #profile-pic {
+    top: unset;
+    bottom: -50px;
+    width: 60%;
+  }
+} 
+
+/* This size and lower needs a lot of updates */
+@media only screen and (max-width: 1050px) {
+  #profile-pic {
+    top: unset;
+    bottom: -50px;
+    width: 65%;
+  }
+} 
+
+@media only screen and (max-width: 900px) {
+  #profile-pic {
+    top: unset;
+    bottom: -50px;
+    width: 75%;
+  }
+} 
+
+@media only screen and (max-width: 800px) {
+  #profile-pic {
+    top: unset;
+    bottom: -50px;
+    width: 85%;
+    margin-left: -70px;
+
+  }
+} 
+
+@media only screen and (max-width: 750px) {
+  #profile-pic {
+    top: unset;
+    bottom: -50px;
+    margin-left: -100px;
+    width: 95%;
+  }
+} 
+@media only screen and (max-width:650px) {
+  #profile-pic {
+    top: unset;
+    bottom: -50px;
+    margin-left: -150px;
+    width: 100%;
+  }
+} 
+@media only screen and (max-width:600px) {
+  #profile-pic {
+    top: unset;
+    bottom: -50px;
+    margin-left: -150px;
+    width: 110%;
+  }
+} 
+
+@media only screen and (max-width:550px) {
+  #profile-pic {
+    top: unset;
+    bottom: -50px;
+    margin-left: -175px;
+    width: 125%;
+  }
+} 
+
+@media only screen and (max-width:500px) {
+  #profile-pic {
+    top: unset;
+    bottom: -50px;
+    margin-left: -185px;
+    width: 140%;
+  }
+} 
+
+@media only screen and (max-width:450px) {
+  #profile-pic {
+    top: unset;
+    bottom: -50px;
+    margin-left: -195px;
+    width: 150%;
+  }
+} 
+
+@media only screen and (max-width:400px) {
+  #profile-pic {
+    top: unset;
+    bottom: -50px;
+    margin-left: -225px;
+    width: 170%;
+  }
+} 
+
+@media only screen and (max-width:350px) {
+  #profile-pic {
+    top: unset;
+    bottom: -50px;
+    margin-left: -205px;
+    width: 190%;
+  }
+} 
+
+@media only screen and (max-width:300px) {
+  #profile-pic {
+    top: unset;
+    bottom: -50px;
+    margin-left: -225px;
+    width: 200%;
   }
 } 
