@@ -1,4 +1,4 @@
-body {
+.The_Grid_Part_Thing {
   border: 3px solid black;
   display: grid;
   grid-template: 22% 22% 22% 10% 22% / 1fr 1fr 1fr ;
