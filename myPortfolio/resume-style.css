@@ -79,24 +79,24 @@ Content.line {
   font-size:20px;
   display: flex;}
 
-  a{ 
+  a.ContactLinks { 
     margin: 30px;
   }
 
-  a:link {
+  a.ContactLinks:link {
   color: white;
   text-decoration: none;
 }
 
 /* visited link */
-a:visited {
+a.ContactLinks:visited {
   color: white;
   text-decoration: none;
 
 }
 
 /* selected link */
-a:active {
+a.ContactLinks:active {
   color: white;
   text-decoration: none;
 }
