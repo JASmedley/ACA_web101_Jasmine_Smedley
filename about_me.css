@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+/* Begin Header */
+header {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  width: 100%;
+  margin-top: 15px; 
+  max-height: 100px ;
+}
+
+.logo {
+  height: 80%;
+  width: 12%;
+  margin-left: 10%;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-right: 2%;
+}
+
+nav > a {
+  margin: 2% 2%;
+  height: 50%;
+  width: 15%;
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.has-border {
+  border-radius: 25px;
+  border: 2px solid black;
+  background: transparent;
+  padding: 10px ; 
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+
+}
+
+.has-border:hover{
+  background: rgb(255, 208, 137);
+  background: linear-gradient(60deg, rgba(249,178,51,100) 0%, rgba(254, 220, 169, 100) 100%);
+  box-shadow:inset 2px 2px 2px 0px 
+  rgba(255,255,255,.5),
+  7px 7px 20px 0px 
+  rgba(0,0,0,.1),
+  4px 4px 5px 0px 
+  rgba(0,0,0,.1);
+outline: none;
+}
+
+.has-border span:hover{
+  color: black;
+}
+/* End Header */
+
+
+html, body {
+  font-family: Open Sans;
+  font-size: 18px;
+  line-height: ;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+} 
+
+section {
+  display: grid;
+  grid-template: 40% 10% 40% 40% / 20% 80%;
+  height: 1000px;
+}
+
+h2 {
+  font-size: 4em;
+  margin: 0px;
+}
+
+h4 {
+  font-style: italic;
+  font-family: lato;
+  margin: 0px;
+}
+
+p {
+  font-family: lato;
+}
+
+.HeadshotAndTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Headshot {
+  max-width: 50%;
+  filter: drop-shadow(10px 6px 10px #7070714d);
+}
+
+.Hero {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 50px;
+}
+
+.SquareAroundHero {
+  background-image: url("LiquidYellowBackground.jpg");
+  background-color: #cccccc;
+  padding: 10px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ResumeDownload {
+  padding: 20px;
+  max-width: 250px;
+  border-radius: 25px;
+  border: 2px solid black;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  font-family: lato;
+  font-style: bold;
+
+}
+
+.ResumeDownload:hover{
+  background: linear-gradient(60deg, rgba(249,178,51,100) 0%, rgba(254, 220, 169, 100) 100%);
+  box-shadow:inset 2px 2px 2px 0px 
+  rgba(255,255,255,.5),
+  7px 7px 20px 0px 
+  rgba(0,0,0,.1),
+  4px 4px 5px 0px 
+  rgba(0,0,0,.1);
+outline: none;
+}
+
+.ResumeDownload span:hover{
+  color: black;
+}
+
+.Counters {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.WordsAndNumbers {
+  display: flex;
+  flex-direction: flex-start;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(60deg, rgba(249,178,51,100) 0%, rgba(254, 220, 169, 100) 100%);
+
+}
+
+.WordsAndNumbers p {
+  font-size: 30px;
+  margin: 0px;
+  text-align: left;
+
+}
+
+.WordsAndNumbers h3 {
+  font-size: 50px;
+  margin: 0px;
+text-align: right;
+}
+
+.SkillBars {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.progress {
+  padding:0;
+  width:90%;
+  height:30px;
+  overflow:hidden;
+  background:#e5e5e5;
+  border-radius:6px;
+}
+
+.bar {
+	position:relative;
+  float:left;
+  min-width:1%;
+  height:100%;
+  background:linear-gradient(60deg, rgba(249,178,51,100) 0%, rgba(254, 220, 169, 100) 100%);
+}
+
+.percent {
+	position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  margin:0;
+  font-family: lato;
+  font-size:15px;
+  color:black;
+}
+
+.Buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(60deg, rgba(249,178,51,100) 0%, rgba(254, 220, 169, 100) 100%);
+}
+
+.Buttons button {
+  padding: 20px;
+  max-width: 200px;
+  border-radius: 25px;
+  border: 2px solid black;
+  background: white;
+  font-size: 20px;
+  font-family: lato;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+
+}
+
+.SummaryBlocks {
+  display: flex;
+  flex-direction: flex-start;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.SquareAroundSummaryBlocks {
+  background: lightgray;
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+
+}
+
+
+/* Typey Letters */
+
+.wrapper {
+  display: grid;
+}
+
+.typing-demo {
+  width: 38.5ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 1.5em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Radial progress bar */
+* {
+  box-sizing: border-box;
+}
+
+.rt-container {
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.radialProgressBar {
+  border-radius: 50%;
+  /* -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%); */
+  width: 50px;
+  height: 50px;
+  /* display: -webkit-box;
+  display: -ms-flexbox; */
+  display: flex;
+  background: #ddd;
+  margin-right: 10px;
+  float:left;
+}
+
+.ProgressBarCaption{
+  text-align: center;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.radialProgressBar .overlay {
+  border-radius: 50%;
+  width:40px;
+  height: 40px;
+  margin: auto;
+  background: white;
+  text-align: center;
+  padding-top: 30%;
+  font-size: 15px;
+  font-family: lato;
+  line-height: 6px;
+}
+
+.progress-1 {
+  /* 90% */
+  background-image: -webkit-linear-gradient(left, #F4B232 50%, transparent 50%), -webkit-linear-gradient(144deg, #F4B232 50%, #F4F3F2 50%);
+  background-image: linear-gradient(90deg, #F4B232 50%, transparent 50%), linear-gradient(-54deg, #F4B232 50%, #F4F3F2 50%);
+
+}
+
+.progress-2 {
+  /* 60% */
+  background-image: -webkit-linear-gradient(left, #F4B232 50%, transparent 50%), -webkit-linear-gradient(36deg, #F4B232 50%, #F4F3F2 50%);
+  background-image: linear-gradient(90deg, #F4B232 50%, transparent 50%), linear-gradient(54deg, #F4B232 50%, #F4F3F2 50%);
+
+}
+
+.progress-3 {
+  /* 20% 
+  background-image: -webkit-linear-gradient(72deg, #ddd 50%, transparent 50%), -webkit-linear-gradient(left, #028cd5 50%, #ddd 50%);
+  background-image: linear-gradient(18deg, #ddd 50%, transparent 50%), linear-gradient(90deg, #028cd5 50%, #ddd 50%);  */
+ 
+ /* 30%
+  background-image: -webkit-linear-gradient(108deg, #ddd 50%, transparent 50%), -webkit-linear-gradient(left, #028cd5 50%, #ddd 50%);
+  background-image: linear-gradient(-18deg, #ddd 50%, transparent 50%), linear-gradient(90deg, #028cd5 50%, #ddd 50%); */
+
+  /* 40%
+  background-image: -webkit-linear-gradient(144deg, #ddd 50%, transparent 50%), -webkit-linear-gradient(left, #028cd5 50%, #ddd 50%);
+  background-image: linear-gradient(-54deg, #ddd 50%, transparent 50%), linear-gradient(90deg, #028cd5 50%, #ddd 50%); */
+
+  /* 50%
+  background-image: -webkit-linear-gradient(right, #ddd 50%, transparent 50%), -webkit-linear-gradient(left, #028cd5 50%, #ddd 50%);
+  background-image: linear-gradient(-90deg, #ddd 50%, transparent 50%), linear-gradient(90deg, #028cd5 50%, #ddd 50%); */
+
+   /* 60%
+  background-image: -webkit-linear-gradient(left, #028cd5 50%, transparent 50%), -webkit-linear-gradient(36deg, #028cd5 50%, #ddd 50%);
+  background-image: linear-gradient(90deg, #028cd5 50%, transparent 50%), linear-gradient(54deg, #028cd5 50%, #ddd 50%); */
+
+  /* 70% */
+  /* background-image: -webkit-linear-gradient(left, #028cd5 50%, transparent 50%), -webkit-linear-gradient(72deg, #028cd5 50%, #ddd 50%);
+  background-image: linear-gradient(90deg, #028cd5 50%, transparent 50%), linear-gradient(18deg, #028cd5 50%, #ddd 50%); */
+
+  /* 80% */
+   background-image: -webkit-linear-gradient(left, #F4B232 50%, transparent 50%), -webkit-linear-gradient(108deg, #F4B232 50%, #F4F3F2 50%);
+  background-image: linear-gradient(90deg, #F4B232 50%, transparent 50%), linear-gradient(-18deg, #F4B232 50%, #F4F3F2 50%);
+
+  /* 90%
+  background-image: -webkit-linear-gradient(left, #028cd5 50%, transparent 50%), -webkit-linear-gradient(144deg, #028cd5 50%, #ddd 50%);
+  background-image: linear-gradient(90deg, #028cd5 50%, transparent 50%), linear-gradient(-54deg, #028cd5 50%, #ddd 50%); */
+
+  /* 100%
+  background-image: -webkit-linear-gradient(left, #028cd5 50%, transparent 50%), -webkit-linear-gradient(right, #028cd5 50%, #ddd 50%);
+  background-image: linear-gradient(90deg, #028cd5 50%, transparent 50%), linear-gradient(-90deg, #028cd5 50%, #ddd 50%); */
+
+
+}
