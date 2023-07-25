@@ -83,7 +83,7 @@ section {
 }
 
 h2 {
-  font-size: 4em;
+  font-size: 3em;
   margin: 0px;
 }
 
@@ -113,7 +113,7 @@ p {
 display: flex;
 flex-direction: column;
 align-items: center;
-padding: 50px;
+padding: 10px;
 }
 
 .SquareAroundHero {
@@ -123,6 +123,10 @@ padding: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 110%;
+  width: 100%;
+
 }
 
 .ResumeDownload {
@@ -166,12 +170,13 @@ outline: none;
   flex-direction: flex-start;
   justify-content: space-evenly;
   align-items: center;
+  margin: 15px;
   background: linear-gradient(60deg, rgba(249,178,51,100) 0%, rgba(254, 220, 169, 100) 100%);
 
 }
 
 .WordsAndNumbers p {
-  font-size: 30px;
+  font-size: 20px;
   margin: 0px;
   text-align: left;
 
@@ -391,18 +396,102 @@ text-align: right;
 
   }
  
-  .logo {
-    width: 30px;
-    height: 40px;
-  }
-  
   nav > a {
     height: 95%;
     width: 35%;
     font-size: 20px;
     margin-bottom: 20px;
   }
-}  
+  section {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  .HeadshotAndTitle {
+ visibility: hidden;
+ height: 0px;
+  }
+
+  .Hero {
+    padding: 5px;
+  }
+  
+  .SquareAroundHero {
+    width: 120%;
+  }
+
+  .ResumeDownload {
+    padding: 10px;
+  }
+  
+  .Counters {
+    display: flex;
+    justify-content: space-evenly;  
+    padding-bottom: 10px;
+  }
+
+  .WordsAndNumbers {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .WordsAndNumbers p {
+    font-size: 10px;
+  }
+  
+  .WordsAndNumbers h3 {
+    font-size: 15px;
+    margin: 5px;
+    border-width: 0px 0px 0px 5px;
+    padding-left: 5px;
+    border-color: black;
+    border-style: solid;
+  }
+  
+  .SkillBars {
+    margin: 15px;
+  }
+  
+  .progress {
+    margin: 10px;
+  }
+  
+  .Buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 15px;
+  }
+
+.Buttons button {
+  padding: 6px;
+  max-width: 100px;
+  border-radius: 15px;
+  border: 2px solid black;
+  background: white;
+  font-size: 15px;
+
+}
+  .SummaryBlocks {
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .SquareAroundSummaryBlocks {
+    margin: 5px;
+    padding: 10px;
+  
+  }
+    
+  .typing-demo {
+    font-size: 1em;
+  }
+}
 
 @media only screen and (max-width:1000px) {
   
@@ -415,5 +504,87 @@ text-align: right;
     height: 65%;
     width: 35%;
     font-size: 20px;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+  }
+  h2 {
+    font-size: 3em;
+  }
+
+  .HeadshotAndTitle {
+ visibility: hidden;
+ height: 0px;
+  }
+
+  .Hero {
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .SquareAroundHero {
+    width: 120%;
+  }
+
+  .ResumeDownload {
+    padding: 15px;
+  }
+  
+  .Counters {
+    display: flex;
+    justify-content: space-evenly;  
+    padding-bottom: 10px;
+  }
+
+  .WordsAndNumbers p {
+    font-size: 75%;
+  }
+  
+  .WordsAndNumbers h3 {
+    font-size: 30px;
+    margin: 5px;
+    padding-left: 5px;
+  }
+  
+  .SkillBars {
+    margin: 15px;
+  }
+  
+  .progress {
+    margin: 10px;
+  }
+  
+  .Buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2%;
+  }
+
+  
+.Buttons button {
+  padding: 1%;
+  max-width: 120%;
+  border-radius: 15px;
+  border: 2px solid black;
+  background: white;
+  font-size: 90%;
+
+}
+  
+  .SummaryBlocks {
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .SquareAroundSummaryBlocks {
+    margin: 5px;
+    padding: 10px;
+  
+  }
+  .typing-demo {
+    font-size: 1em;
   }
 }  
