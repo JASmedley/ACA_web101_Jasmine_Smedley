@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
 @import url(//fonts.googleapis.com/css?family=Lato:300:400);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 
 html, body {
   font-family: Open Sans;
@@ -9,6 +10,7 @@ html, body {
   margin: auto;
 }
 
+
 .MainContainer {
   perspective: 1px;
   transform-style: preserve-3d;
@@ -17,6 +19,32 @@ html, body {
   overflow-y: scroll;
   background: rgb(255, 208, 137);
   background: linear-gradient(60deg, rgba(249,178,51,100) 0%, rgba(254, 220, 169, 100) 100%);
+}
+
+.wrapper {
+  display: grid;
+}
+
+.typing-demo {
+  width: 38.5ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 1.5em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .ParallaxContainer {
@@ -168,13 +196,64 @@ outline: none;
 }
 
 .Content2 {
-  max-width: 750px;
+  max-width: 90%;
   margin: 0 auto;
   padding: 75px 0;
 }
 
+
+.container{
+  padding: 75px 0;
+  margin: 0 auto;
+  width: 1140px;
+  
+
+}
+
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+
+  
+  
+  &:hover{
+    flex: 7;
+  }
+}
+
+.item-1 { 
+  
+  background-image: linear-gradient(60deg, rgba(249,178,51,.8) 0%, rgba(254, 220, 169, .8) 100%), url("./kawaii.png");
+}
+
+.item-2 { 
+  
+  background-image: linear-gradient(60deg, rgba(249,178,51,.8) 0%, rgba(254, 220, 169, .8) 100%),url('./nasa.png');
+}
+
+.item-3 { 
+  background-image: linear-gradient(60deg, rgba(249,178,51,.8) 0%, rgba(254, 220, 169, .8) 100%),url('./responsive\ site.png');
+}
+
+.item-4 { 
+  background-image: linear-gradient(60deg, rgba(249,178,51,.8) 0%, rgba(254, 220, 169, .8) 100%),url('./zizurz.png');
+}
+
 h3 {
   font-size: 3em ;
+  text-align: center;
 }
 p {
   margin: 30px 0;
@@ -184,156 +263,198 @@ p {
   color: #333333;
   display: flex;
 }
-ol {
-  margin: -20px 0px 0px 0px;
-  font-family: 'Lato', sans-serif;
-  letter-spacing: 1px;
-  font-size:14px;
-  color: #333333;
-  line-height: 2;
-}
-p.quote {
-  font-style: italic;
-  justify-content: center;
+
+a.item {
+  font-size: 3em;
+  text-decoration: none;
+  color: white;
+  font-family: "Lato";
+  line-height: 1em;
+  text-align: center;
 }
 
-@media only screen and (max-width: 1350px) {
-  h1 {
-    font-size: 4em;
-  }
-  #profile-pic {
-    top: unset;
-    bottom: -100px;
-    
-  }
-} 
 
-@media only screen and (max-width: 1250px) {
-  #profile-pic {
-    top: unset;
-    bottom: -65px;
-    width: 55%;
-  }
-} 
+/* This size and lower needs a lot of updates */
 
 @media only screen and (max-width: 1200px) {
   #profile-pic {
     top: unset;
-    bottom: -65px;
-    width: 60%;
+    bottom: -50px;
+    width: 55%;
   }
-} 
+  .ParallaxContainer {
+    justify-content: center;
+  }
 
-@media only screen and (max-width: 1150px) {
+  h1 {
+    margin-right: 300px;
+    margin-bottom: 0px;
+  }
+
+  div.wrapper {
+   margin-right: 300px;
+  
+  }
+
+  button {
+    margin-right: 300px;
+  }
+
+} 
+@media only screen and (max-width:1024px) {
   #profile-pic {
     top: unset;
     bottom: -50px;
-    width: 60%;
+    width: 55%;
+  }
+  .ParallaxContainer {
+    justify-content: center;
+  }
+
+  h1 {
+    margin-right: 300px;
+    margin-bottom: 0px;
+  }
+
+  div.wrapper {
+   margin-right: 300px;
+  
+  }
+
+  button {
+    margin-right: 300px;
   }
 } 
-
-/* This size and lower needs a lot of updates */
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width:768px) {
+  .Content2 {
+    max-width: 70%;
+  }
+  
+  
+  .container{
+    padding: 0px;
+    margin: 0px;
+    width: 110%;
+    
+  
+  }
+  
+  .gallery-wrap {
+    width: 50%;
+    height: 50vh;
+  }
+  
   #profile-pic {
     top: unset;
-    bottom: -50px;
+    bottom: -30px;
     width: 65%;
   }
-} 
-
-@media only screen and (max-width: 900px) {
-  #profile-pic {
-    top: unset;
-    bottom: -50px;
-    width: 75%;
+  .ParallaxContainer {
+    justify-content: center;
+    height: 600px;
   }
-} 
 
-@media only screen and (max-width: 800px) {
-  #profile-pic {
-    top: unset;
-    bottom: -50px;
-    width: 85%;
-    margin-left: -70px;
-
+  h1 {
+    margin-right: 200px;
+    margin-bottom: 0px;
   }
-} 
 
-@media only screen and (max-width: 750px) {
+  div.wrapper {
+   margin-right: 200px;
+  }
+
+  .typing-demo {
+    font-size: 20px;
+  }
+
+  button {
+    margin-right: 200px;
+  }
+  }
+@media only screen and (max-width:480px) {
   #profile-pic {
-    top: unset;
-    bottom: -50px;
-    margin-left: -100px;
     width: 95%;
-  }
-} 
-@media only screen and (max-width:650px) {
-  #profile-pic {
-    top: unset;
-    bottom: -50px;
-    margin-left: -150px;
-    width: 100%;
-  }
-} 
-@media only screen and (max-width:600px) {
-  #profile-pic {
-    top: unset;
-    bottom: -50px;
-    margin-left: -150px;
-    width: 110%;
-  }
-} 
+    top: 0;
+    left: 15%;
+    top: auto;
+    margin: auto;
+    visibility: visible;
+    }
 
-@media only screen and (max-width:550px) {
-  #profile-pic {
-    top: unset;
-    bottom: -50px;
-    margin-left: -175px;
-    width: 125%;
-  }
-} 
+    .typing-demo {
+      visibility: hidden;
+    }
 
-@media only screen and (max-width:500px) {
-  #profile-pic {
-    top: unset;
-    bottom: -50px;
-    margin-left: -185px;
-    width: 140%;
-  }
-} 
+    .wrapper {
+      visibility: hidden;
+    }
 
-@media only screen and (max-width:450px) {
-  #profile-pic {
-    top: unset;
-    bottom: -50px;
-    margin-left: -195px;
-    width: 150%;
-  }
-} 
+    .ParallaxContainer {
+      height: 500px;
+      justify-content: center;
+    }
 
-@media only screen and (max-width:400px) {
-  #profile-pic {
-    top: unset;
-    bottom: -50px;
-    margin-left: -225px;
-    width: 170%;
+    h1 {
+      font-size: 3em;
+      max-width: 95%;
+      text-align: center;
+      line-height: 1em;
+      margin-top: -25px;
+    }
+    
+    .flexboxContainer {
+    display: flex;
+    align-items: center;
+    width: 95%;
+   }
+   button {
+   margin-left: 0px;
+   margin-top: -50px;
   }
-} 
+div .Content2 { 
+  max-width: 80%;
+}
+  h3 { 
+    font-size:2em;
+  }
+  }
+@media only screen and (max-width:320px) {
+  #profile-pic {
+    visibility: hidden;
+    }
 
-@media only screen and (max-width:350px) {
-  #profile-pic {
-    top: unset;
-    bottom: -50px;
-    margin-left: -205px;
-    width: 190%;
-  }
-} 
+    .typing-demo {
+      visibility: hidden;
+    }
 
-@media only screen and (max-width:300px) {
-  #profile-pic {
-    top: unset;
-    bottom: -50px;
-    margin-left: -225px;
-    width: 200%;
+    .wrapper {
+      visibility: hidden;
+    }
+
+    .ParallaxContainer {
+      height: 350px;
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: 2em;
+      line-height: 1.25em;
+      margin: 0;
+      align-content: top;
+      margin-top: 50px;
+ 
+    }
+
+   button {
+      margin: 0px;
+      margin-top: -55px;
+      align-content: top;
+
   }
-} 
+div .Content2 { 
+  max-width: 80%;
+}
+  h3 { 
+    font-size:2em;
+  }
+  }
